@@ -1,9 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Layout, Menu, Button as AntButton, Icon } from 'antd';
 
-import NavBar from '../components/nav/NavBar/NavBar';
-import SimpleButton from '../components/UI/SimpleButton';
+import NavBar from '../../components/nav/NavBar/NavBar';
+import SimpleButton from '../../components/UI/SimpleButton';
 
 export default function Header() {
   return (
@@ -58,11 +57,6 @@ export default function Header() {
             </div>
           </div>
         </div>
-        {/* Place Particle Js */}
-        <div
-          id="particles-bg"
-          className="particles-container is-fixed particles-bg op-20"
-        />
       </div>
     </header>
   );

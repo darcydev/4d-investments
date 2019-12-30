@@ -2,31 +2,25 @@ import React from 'react';
 
 import 'antd/dist/antd.css';
 
-import Header from './sections/Header';
-import AntHeader from './sections/AntHeader';
+import Header from './sections/Header/Header';
+import Contact from './sections/Contact/Contact'
+import Platform from './sections/Platform/Platform';
+
+import Footer from './components/nav/Footer/Footer'
+import SectionHeading from './components/display/Headings/SectionHeading'
 
 export default function App() {
   return (
     <div className="App">
       <div className="nk-wrap">
         <Header />
-        {/* <AntHeader /> */}
         <main className="nk-pages tc-light">
           {/* // */}
           <section className="section" id="ecosystems">
             <div className="container">
               <div className="row justify-content-center text-center">
                 <div className="col-lg-6">
-                  <div className="section-head section-head-s2">
-                    <h2
-                      className="title title-xl animated"
-                      data-animate="fadeInUp"
-                      data-delay="0.1"
-                      title="Core Ecosystems"
-                    >
-                      ECOSYSTEMS
-                    </h2>
-                  </div>
+                  <SectionHeading heading='4D Ecosystem' backgroundHeading='4D Ecosystem' />
                 </div>
               </div>
             </div>
@@ -114,280 +108,12 @@ export default function App() {
               </div>
             </div>
           </section>
-          {/* // */}
-          <section className="section" id="platform">
-            <div className="container">
-              <div className="row justify-content-center text-center">
-                <div className="col-lg-6">
-                  <div className="section-head section-head-s2">
-                    <h2
-                      className="title title-xl animated"
-                      data-animate="fadeInUp"
-                      data-delay="0.1"
-                      title="ICOX Products"
-                    >
-                      PLATFORM
-                    </h2>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="container container-xxl">
-              <div className="nk-block">
-                <div className="row justify-content-center">
-                  <div className="col-xl-6 col-lg-8">
-                    <ul
-                      className="nav tab-nav tab-nav-btn-bdr-s2 justify-content-center justify-content-sm-between pb-4 pb-sm-5 animated"
-                      data-animate="fadeInUp"
-                      data-delay="0.2"
-                    >
-                      <li>
-                        <a className="active" data-toggle="tab" href="#tab-1-1">
-                          FOR Participators
-                        </a>
-                      </li>
-                      <li className="tab-nav-sap d-none d-sm-block" />
-                      <li>
-                        <a data-toggle="tab" href="#tab-1-2">
-                          For Traders
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div className="tab-content">
-                  <div className="tab-pane fade show active" id="tab-1-1">
-                    <div className="row align-items-center justify-content-between gutter-vr-40px">
-                      <div className="col-lg-6 order-lg-last">
-                        <div
-                          className="nk-block-img nk-block-ca animated"
-                          data-animate="fadeInUp"
-                          data-delay="0.2"
-                        >
-                          <div className="nk-circle-animation nk-df-center fast" />
-                          {/* .circle-animation */}
-                          <img
-                            className="shadow rounded"
-                            src="images/app-screens/sc-medium-a.png"
-                            alt=""
-                          />
-                        </div>
-                      </div>
-                      <div className="col-lg-5">
-                        <div className="nk-block-text mgb-m30">
-                          <h2
-                            className="title title-md animated"
-                            data-animate="fadeInUp"
-                            data-delay="0.2"
-                          >
-                            A Open Platform for our Participators
-                          </h2>
-                          <p
-                            className="animated"
-                            data-animate="fadeInUp"
-                            data-delay="0.2"
-                          >
-                            Each participator can choose the trader and to sign
-                            a contract.
-                          </p>
-                          <div
-                            className="feature feature-inline feature-middle animated"
-                            data-animate="fadeInUp"
-                            data-delay="0.3"
-                          >
-                            <div className="feature-icon feature-icon-md">
-                              <em className="icon icon-md icon-grd ikon ikon-bulb" />
-                            </div>
-                            <div className="feature-text">
-                              <p>
-                                User have full access to trading consectetur
-                                adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua.
-                              </p>
-                            </div>
-                          </div>
-                          <div
-                            className="feature feature-inline feature-middle animated"
-                            data-animate="fadeInUp"
-                            data-delay="0.4"
-                          >
-                            <div className="feature-icon feature-icon-md">
-                              <em className="icon icon-md icon-grd ikon ikon-paricle" />
-                            </div>
-                            <div className="feature-text">
-                              <p>
-                                Our multi-cryptocurrency exchange will uis aute
-                                irure dolor in reprehenderit in voluptate velit
-                                uuntur magni dolores esse cillum.
-                              </p>
-                            </div>
-                          </div>
-                          <div
-                            className="feature feature-inline feature-middle animated"
-                            data-animate="fadeInUp"
-                            data-delay="0.5"
-                          >
-                            <div className="feature-icon feature-icon-md">
-                              <em className="icon icon-md icon-grd ikon ikon-bulb-2" />
-                            </div>
-                            <div className="feature-text">
-                              <p>
-                                Users will be able to take quis nostrum
-                                exercitationem ullam corporis susci pitlabo
-                                riosam, nisi ut aliquid ex ea commodie.
-                              </p>
-                            </div>
-                          </div>
-                          <div
-                            className="feature feature-inline feature-middle animated"
-                            data-animate="fadeInUp"
-                            data-delay="0.6"
-                          >
-                            <div className="feature-icon feature-icon-md">
-                              <em className="icon icon-md icon-grd ikon ikon-document-2" />
-                            </div>
-                            <div className="feature-text">
-                              <p>
-                                Sign a smart-contract to allow our trader’s
-                                access for live trading corporis cryptocurrency
-                                susci pitlabo riosam, nisi ut.
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="tab-pane fade" id="tab-1-2">
-                    <div className="row align-items-center justify-content-between gutter-vr-40px">
-                      <div className="col-lg-6 order-lg-last">
-                        <div
-                          className="nk-block-img nk-block-ca animated"
-                          data-animate="fadeInUp"
-                          data-delay="0.2"
-                        >
-                          <div className="nk-circle-animation nk-df-center fast" />
-                          {/* .circle-animation */}
-                          <img
-                            className="shadow rounded"
-                            src="images/app-screens/sc-medium-a.png"
-                            alt=""
-                          />
-                        </div>
-                      </div>
-                      <div className="col-lg-5">
-                        <div className="nk-block-text mgb-m30">
-                          <h2
-                            className="title title-md animated"
-                            data-animate="fadeInUp"
-                            data-delay="0.2"
-                          >
-                            A Open Platform for our Participators
-                          </h2>
-                          <p
-                            className="animated"
-                            data-animate="fadeInUp"
-                            data-delay="0.2"
-                          >
-                            Each participator can choose the trader and to sign
-                            a contract.
-                          </p>
-                          <div
-                            className="feature feature-inline feature-middle animated"
-                            data-animate="fadeInUp"
-                            data-delay="0.3"
-                          >
-                            <div className="feature-icon feature-icon-md">
-                              <em className="icon icon-md icon-grd ikon ikon-bulb" />
-                            </div>
-                            <div className="feature-text">
-                              <p>
-                                User have full access to trading consectetur
-                                adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua.
-                              </p>
-                            </div>
-                          </div>
-                          <div
-                            className="feature feature-inline feature-middle animated"
-                            data-animate="fadeInUp"
-                            data-delay="0.4"
-                          >
-                            <div className="feature-icon feature-icon-md">
-                              <em className="icon icon-md icon-grd ikon ikon-paricle" />
-                            </div>
-                            <div className="feature-text">
-                              <p>
-                                Our multi-cryptocurrency exchange will uis aute
-                                irure dolor in reprehenderit in voluptate velit
-                                uuntur magni dolores esse cillum.
-                              </p>
-                            </div>
-                          </div>
-                          <div
-                            className="feature feature-inline feature-middle animated"
-                            data-animate="fadeInUp"
-                            data-delay="0.5"
-                          >
-                            <div className="feature-icon feature-icon-md">
-                              <em className="icon icon-md icon-grd ikon ikon-bulb-2" />
-                            </div>
-                            <div className="feature-text">
-                              <p>
-                                Users will be able to take quis nostrum
-                                exercitationem ullam corporis susci pitlabo
-                                riosam, nisi ut aliquid ex ea commodie.
-                              </p>
-                            </div>
-                          </div>
-                          <div
-                            className="feature feature-inline feature-middle animated"
-                            data-animate="fadeInUp"
-                            data-delay="0.6"
-                          >
-                            <div className="feature-icon feature-icon-md">
-                              <em className="icon icon-md icon-grd ikon ikon-document-2" />
-                            </div>
-                            <div className="feature-text">
-                              <p>
-                                Sign a smart-contract to allow our trader’s
-                                access for live trading corporis cryptocurrency
-                                susci pitlabo riosam, nisi ut.
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            {/* .container */}
-          </section>
-          {/* // */}
+          <Platform />
           <section className="section" id="mvp">
             <div className="container">
               <div className="row justify-content-center text-center">
                 <div className="col-lg-6">
-                  <div className="section-head section-head-s2">
-                    <h2
-                      className="title title-xl animated"
-                      data-animate="fadeInUp"
-                      data-delay="0.1"
-                      title="MVP Apps"
-                    >
-                      MVP
-                    </h2>
-                    <p
-                      className="animated"
-                      data-animate="fadeInUp"
-                      data-delay="0.2"
-                    >
-                      Our project is based on an existing cryptocurrency
-                      exchange.
-                    </p>
-                  </div>
+                  <SectionHeading heading="Our Solutions" />
                 </div>
               </div>
             </div>
@@ -528,23 +254,8 @@ export default function App() {
             <div className="container">
               <div className="row justify-content-center text-center">
                 <div className="col-lg-6">
-                  <div className="section-head section-head-s2">
-                    <h2
-                      className="title title-xl animated"
-                      data-animate="fadeInUp"
-                      data-delay="0.1"
-                      title="Token Details"
-                    >
-                      TOKENS
-                    </h2>
-                    <p
-                      className="animated"
-                      data-animate="fadeInUp"
-                      data-delay="0.2"
-                    >
-                      Breakdown of our Token Recipients.
-                    </p>
-                  </div>
+                <SectionHeading heading="Our Tokens" />
+                  
                 </div>
               </div>
             </div>
@@ -743,24 +454,8 @@ export default function App() {
             <div className="container">
               <div className="row justify-content-center text-center">
                 <div className="col-lg-6">
-                  <div className="section-head section-head-s2">
-                    <h2
-                      className="title title-xl animated"
-                      data-animate="fadeInUp"
-                      data-delay="0.1"
-                      title="Timeline"
-                    >
-                      ROADMAP
-                    </h2>
-                    <p
-                      className="animated"
-                      data-animate="fadeInUp"
-                      data-delay="0.2"
-                    >
-                      ICO Crypto is developing a global data-driven platform for
-                      the world. Powered by blockchain and smart contracts.
-                    </p>
-                  </div>
+                <SectionHeading heading="Key Milestones" />
+                  
                 </div>
               </div>
             </div>
@@ -863,24 +558,8 @@ export default function App() {
             <div className="container">
               <div className="row justify-content-center text-center">
                 <div className="col-lg-6">
-                  <div className="section-head section-head-s2">
-                    <h2
-                      className="title title-xl animated"
-                      data-animate="fadeInUp"
-                      data-delay="0.1"
-                      title="Core Team"
-                    >
-                      OUR TEAM
-                    </h2>
-                    <p
-                      className="animated"
-                      data-animate="fadeInUp"
-                      data-delay="0.2"
-                    >
-                      With help from our teams, contributors and investors these
-                      are the milestones we are looking forward to achieve.
-                    </p>
-                  </div>
+                  <SectionHeading heading="Our Team" subHeading="With help from our teams, contributors and investors these
+                      are the milestones we are looking forward to achieve." />
                 </div>
               </div>
             </div>
@@ -2821,228 +2500,9 @@ export default function App() {
             </div>
           </section>
           {/* // */}
-          <section className="section" id="contact">
-            <div className="container">
-              {/* Block @s */}
-              <div className="nk-block nk-block-about">
-                <div className="row justify-content-between align-items-center gutter-vr-50px">
-                  <div className="col-lg-6">
-                    <div className="nk-block-text">
-                      <div className="nk-block-text-head">
-                        <h2
-                          className="title title-lg ttu animated"
-                          data-animate="fadeInUp"
-                          data-delay="0.7"
-                        >
-                          Contact Us
-                        </h2>
-                        <p
-                          className="animated"
-                          data-animate="fadeInUp"
-                          data-delay="0.8"
-                        >
-                          We are always open and we welcome and questions you
-                          have for our team. If you wish to get in touch, please
-                          fill out the form below. Someone from our team will
-                          get back to you shortly.
-                        </p>
-                      </div>
-                      <form
-                        className="nk-form-submit"
-                        action="form/contact.php"
-                        method="post"
-                      >
-                        <div className="row">
-                          <div className="col-sm-6">
-                            <div
-                              className="field-item animated"
-                              data-animate="fadeInUp"
-                              data-delay="0.8"
-                            >
-                              <label className="field-label ttu">
-                                Your Name
-                              </label>
-                              <div className="field-wrap">
-                                <input
-                                  name="contact-name"
-                                  placeholder="Introduce yourself"
-                                  type="text"
-                                  className="input-bordered required"
-                                />
-                              </div>
-                            </div>
-                          </div>
-                          <div className="col-sm-6">
-                            <div
-                              className="field-item animated"
-                              data-animate="fadeInUp"
-                              data-delay="0.9"
-                            >
-                              <label className="field-label ttu">
-                                Your Email
-                              </label>
-                              <div className="field-wrap">
-                                <input
-                                  name="contact-email"
-                                  placeholder="Who do we replay to"
-                                  type="email"
-                                  className="input-bordered required email"
-                                />
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div
-                          className="field-item animated"
-                          data-animate="fadeInUp"
-                          data-delay={1.0}
-                        >
-                          <label className="field-label ttu">
-                            Your Message
-                          </label>
-                          <div className="field-wrap">
-                            <textarea
-                              name="contact-message"
-                              placeholder="Leave your question or comment here"
-                              className="input-bordered input-textarea required"
-                              defaultValue={''}
-                            />
-                          </div>
-                        </div>
-                        <input
-                          type="text"
-                          className="d-none"
-                          name="form-anti-honeypot"
-                          defaultValue
-                        />
-                        <div className="row">
-                          <div
-                            className="col-sm-5 text-right animated"
-                            data-animate="fadeInUp"
-                            data-delay="1.1"
-                          >
-                            <button
-                              type="submit"
-                              className="btn btn-round btn-primary"
-                            >
-                              SEND
-                            </button>
-                          </div>
-                          <div className="col-sm-7 order-sm-first">
-                            <div className="form-results" />
-                          </div>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-                  <div className="col-lg-5 text-center order-lg-first">
-                    <div
-                      className="nk-block-contact nk-block-contact-s1  animated"
-                      data-animate="fadeInUp"
-                      data-delay="0.1"
-                    >
-                      <ul className="contact-list">
-                        <li
-                          className="animated"
-                          data-animate="fadeInUp"
-                          data-delay="0.2"
-                        >
-                          <em className="contact-icon fas fa-phone" />
-                          <div className="contact-text">
-                            <span>+44 0123 4567</span>
-                          </div>
-                        </li>
-                        <li
-                          className="animated"
-                          data-animate="fadeInUp"
-                          data-delay="0.3"
-                        >
-                          <em className="contact-icon fas fa-envelope" />
-                          <div className="contact-text">
-                            <span>info@company.com</span>
-                          </div>
-                        </li>
-                        <li
-                          className="animated"
-                          data-animate="fadeInUp"
-                          data-delay="0.4"
-                        >
-                          <em className="contact-icon fas fa-paper-plane" />
-                          <div className="contact-text">
-                            <span>Join us on Telegram</span>
-                          </div>
-                        </li>
-                      </ul>
-                      <div className="nk-circle-animation nk-df-center white small" />
-                      {/* .circle-animation */}
-                    </div>
-                    <ul
-                      className="social-links social-links-s2 justify-content-center animated"
-                      data-animate="fadeInUp"
-                      data-delay="0.6"
-                    >
-                      <li>
-                        <a href="#">
-                          <em className="fab fa-twitter" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <em className="fab fa-medium-m" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <em className="fab fa-facebook-f" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <em className="fab fa-youtube" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <em className="fab fa-bitcoin" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <em className="fab fa-github" />
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              {/* .block @e */}
-            </div>
-          </section>
+        <Contact />
         </main>
-        <footer className="nk-footer-bar section section-s tc-light">
-          <div className="container container-xxl">
-            <div className="row gutter-vr-10px">
-              <div className="col-lg-6 order-lg-last text-lg-right">
-                <ul className="footer-nav">
-                  <li>
-                    <a href="#">Privacy Policy</a>
-                  </li>
-                  <li>
-                    <a href="#">Terms of sales</a>
-                  </li>
-                </ul>
-              </div>
-              <div className="col-lg-6">
-                <div className="copyright-text copyright-text-s2">
-                  Copyright © 2019 ICO. Handcrafted by <a href="#">iO</a>.
-                </div>
-              </div>
-            </div>
-          </div>
-        </footer>
-        <div className="nk-ovm nk-ovm-repeat nk-ovm-fixed shape-i">
-          <div className="ovm-line" />
-        </div>
+        <Footer />
       </div>
     </div>
   );

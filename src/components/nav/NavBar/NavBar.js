@@ -1,67 +1,46 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
-import { Layout, Menu, Button as AntButton, Icon } from 'antd';
+import { Menu, Icon } from 'antd';
 
 import { NAV_BAR_LINKS } from '../../../data/NavLinks';
 
-import './NavBar.css';
-
-import NavBarItem from './NavBarItem';
-
 import SimpleButton from '../../UI/SimpleButton';
+import InvestmentsLogo from '../../display/Logos/InvestmentsLogo';
 
-// import FourDMarketsLogo from '../Logo/4DMarketsLogo';
-
-const { Header, Content } = Layout;
 const { SubMenu } = Menu;
 
-export default function NavBar() {
-  const [isOpen, toggleOpen] = useState(false);
-
-  const ICON_MARKUP = isOpen ? 'down-circle' : 'up-circle';
-
+export default function AntNavBar() {
   const ITEMS_MARKUP = NAV_BAR_LINKS.map((v, i) => (
     <Menu.Item key={`${i}:${v.title}`}>
-      <a href={v.link} target="_blank" rel="noopener noreferrer">
-        {v.title}
-      </a>
+      <SimpleButton type="link" href="https://google.com" text={v.title} />
     </Menu.Item>
   ));
 
   return (
-    <Container className="Navbar">
-      <Menu
-        theme="dark"
-        mode="horizontal"
-        defaultSelectedKeys={['0']}
-        style={{ lineHeight: '64px' }}
-      >
-        {/* TODO insert logo */}
-        <ButtonContainer className="toggle" onClick={() => toggleOpen(!isOpen)}>
-          <Icon type={ICON_MARKUP} theme="twoTone" />
-        </ButtonContainer>
+    <Container>
+      <InvestmentsLogo />
+      <Menu mode="horizontal">
         {ITEMS_MARKUP}
+        <SubMenu
+          title={
+            <span className="submenu-title-wrapper">
+              <Icon type="setting" />
+              INCLUDE SUBMENU
+            </span>
+          }
+        >
+          <Menu.ItemGroup title="Item 1">
+            <Menu.Item key="setting:1">Option 1</Menu.Item>
+            <Menu.Item key="setting:2">Option 2</Menu.Item>
+          </Menu.ItemGroup>
+          <Menu.ItemGroup title="Item 2">
+            <Menu.Item key="setting:3">Option 3</Menu.Item>
+            <Menu.Item key="setting:4">Option 4</Menu.Item>
+          </Menu.ItemGroup>
+        </SubMenu>
       </Menu>
     </Container>
   );
 }
 
-const Container = styled.nav`
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  min-height: 70px;
-  .logo-and-button {
-    display: flex;
-    align-items: center;
-  }
-`;
-
-const LinksContainer = styled.ul`
-  display: flex;
-`;
-
-const LogoContainer = styled.div``;
-const ButtonContainer = styled.div``;
+const Container = styled.div``;
