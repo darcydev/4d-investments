@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import NavBar from '../../components/nav/NavBar/NavBar';
-import SimpleButton from '../../components/UI/SimpleButton';
+import SimpleButton from '../../components/UI/Buttons/SimpleButton';
 
 export default function Header() {
   return (
@@ -31,7 +31,7 @@ export default function Header() {
                     data-animate="fadeInUp"
                     data-delay=".8"
                   >
-                    To constitute Tribunals inferior to the other House
+                    4D Investments
                   </h1>
                   <p
                     className="lead animated"

@@ -1,11 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
+import { List, Avatar, Icon } from 'antd';
 
 import SectionHeading from '../../components/display/Headings/SectionHeading';
 import Title from '../../components/display/Headings/Title';
 
 import SimpleTab from '../../components/UI/Tabs/SimpleTab';
 import IconList from '../../components/display/Lists/IconList';
+import PlatformListItem from './PlatformListItem';
 
 export default function Platform() {
   return (
@@ -67,7 +69,10 @@ export default function Platform() {
                       title="An Open Platform for our Participators"
                       subTitle="Each participator can choose the trader and to sign a contract."
                     />
-                    <IconList />
+                    <PlatformListItem />
+                    <PlatformListItem />
+                    <PlatformListItem />
+                    <PlatformListItem />
                   </div>
                 </div>
               </div>
@@ -106,22 +111,10 @@ export default function Platform() {
                       Each participator can choose the trader and to sign a
                       contract.
                     </p>
-                    <div
-                      className="feature feature-inline feature-middle animated"
-                      data-animate="fadeInUp"
-                      data-delay="0.6"
-                    >
-                      <div className="feature-icon feature-icon-md">
-                        <em className="icon icon-md icon-grd ikon ikon-document-2" />
-                      </div>
-                      <div className="feature-text">
-                        <p>
-                          Sign a smart-contract to allow our trader’s access for
-                          live trading corporis cryptocurrency susci pitlabo
-                          riosam, nisi ut.
-                        </p>
-                      </div>
-                    </div>
+                    <PlatformListItem />
+                    <PlatformListItem />
+                    <PlatformListItem />
+                    <PlatformListItem />
                   </div>
                 </div>
               </div>

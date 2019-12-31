@@ -12,7 +12,8 @@ export default function SimpleButton({
   size = 'large',
   text = undefined,
   href = undefined,
-  styles = undefined
+  styles = undefined,
+  classes = undefined
 }) {
   return (
     <AntButton
@@ -25,6 +26,7 @@ export default function SimpleButton({
       target="_blank"
       rel="noopener noreferrer"
       style={styles}
+      className={classes}
     >
       {customTextIcon}
       {text}

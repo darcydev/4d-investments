@@ -1,15 +1,18 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { Menu, Icon } from 'antd';
 
 import { NAV_BAR_LINKS } from '../../../data/NavLinks';
 
-import SimpleButton from '../../UI/SimpleButton';
+import SimpleButton from '../../UI/Buttons/SimpleButton';
 import InvestmentsLogo from '../../display/Logos/InvestmentsLogo';
 
 const { SubMenu } = Menu;
 
-export default function AntNavBar() {
+const data = [];
+
+export default function NavBar() {
   const ITEMS_MARKUP = NAV_BAR_LINKS.map((v, i) => (
     <Menu.Item key={`${i}:${v.title}`}>
       <SimpleButton type="link" href="https://google.com" text={v.title} />
@@ -19,7 +22,16 @@ export default function AntNavBar() {
   return (
     <Container>
       <InvestmentsLogo />
-      <Menu mode="horizontal">
+      <Menu
+        mode="horizontal"
+        style={{
+          textAlign: 'right',
+          position: 'absolute',
+          bottom: 0,
+          width: '100%',
+          background: 'inherit'
+        }}
+      >
         {ITEMS_MARKUP}
         <SubMenu
           title={
@@ -30,7 +42,9 @@ export default function AntNavBar() {
           }
         >
           <Menu.ItemGroup title="Item 1">
-            <Menu.Item key="setting:1">Option 1</Menu.Item>
+            <Menu.Item key="setting:1">
+              <Link to="/rooms">Hotel Rooms</Link>
+            </Menu.Item>
             <Menu.Item key="setting:2">Option 2</Menu.Item>
           </Menu.ItemGroup>
           <Menu.ItemGroup title="Item 2">
@@ -43,4 +57,8 @@ export default function AntNavBar() {
   );
 }
 
-const Container = styled.div``;
+const Container = styled.div`
+  min-height: 100px;
+  background: #5870ae;
+  position: relative;
+`;
