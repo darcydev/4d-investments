@@ -36,7 +36,6 @@ export default function Error() {
             </div>
           </main>
         </div>
-        <div className="nk-ovm shape-i ov-h" />
       </div>
     </Container>
   );
