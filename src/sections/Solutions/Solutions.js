@@ -47,30 +47,14 @@ export default function Solutions() {
                   type="danger"
                   text="Enter Exchange"
                   href="https://google.com"
-                  styles={{
-                    color: 'white',
-                    textTransform: 'uppercase'
-                  }}
+                  customStyleType="big"
                 />
                 <SimpleButton
                   type="danger"
                   text="Enter Platform"
                   href="https://google.com"
-                  styles={{
-                    color: 'white',
-                    textTransform: 'uppercase'
-                  }}
-                  classes="btn btn-round btn-primary"
+                  customStyleType="big"
                 />
-                <div
-                  className="text-center text-sm-left animated"
-                  data-animate="fadeInUp"
-                  data-delay="0.9"
-                >
-                  <a href="#" className="btn btn-round btn-primary">
-                    Try Demo Free
-                  </a>
-                </div>
               </div>
             </div>
           </div>

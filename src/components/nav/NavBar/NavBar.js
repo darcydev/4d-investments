@@ -10,30 +10,36 @@ import InvestmentsLogo from '../../display/Logos/InvestmentsLogo';
 
 const { SubMenu } = Menu;
 
-const data = [];
-
 export default function NavBar() {
-  const ITEMS_MARKUP = NAV_BAR_LINKS.map((v, i) => (
-    <Menu.Item key={`${i}:${v.title}`}>
-      <SimpleButton type="link" href="https://google.com" text={v.title} />
-    </Menu.Item>
-  ));
+  const ITEMS_MARKUP = NAV_BAR_LINKS.map((v, i) => {
+    if (v.topNavBar) {
+      return (
+        <Menu.Item key={`${i}:${v.title}`}>
+          <SimpleButton type="link" href="https://google.com" text={v.title} />
+        </Menu.Item>
+      );
+    }
+  });
 
   return (
     <Container>
-      <InvestmentsLogo />
+      <LogoContainer>
+        <InvestmentsLogo />
+      </LogoContainer>
       <Menu
         mode="horizontal"
         style={{
+          color: 'white',
           textAlign: 'right',
           position: 'absolute',
           bottom: 0,
-          width: '100%',
-          background: 'inherit'
+          right: 0,
+          background: 'inherit',
+          maxWidth: '70%'
         }}
       >
         {ITEMS_MARKUP}
-        <SubMenu
+        {/*         <SubMenu
           title={
             <span className="submenu-title-wrapper">
               <Icon type="setting" />
@@ -51,7 +57,7 @@ export default function NavBar() {
             <Menu.Item key="setting:3">Option 3</Menu.Item>
             <Menu.Item key="setting:4">Option 4</Menu.Item>
           </Menu.ItemGroup>
-        </SubMenu>
+        </SubMenu> */}
       </Menu>
     </Container>
   );
@@ -59,6 +65,13 @@ export default function NavBar() {
 
 const Container = styled.div`
   min-height: 100px;
-  background: #5870ae;
   position: relative;
+  display: flex;
+`;
+
+const LogoContainer = styled.div`
+  min-width: 30%;
+  height: 100%;
+  padding: 10px;
+  margin: 30px 0 0 30px;
 `;

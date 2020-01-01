@@ -13,8 +13,11 @@ export default function SimpleButton({
   text = undefined,
   href = undefined,
   styles = undefined,
-  classes = undefined
+  classes = undefined,
+  customStyleType = undefined
 }) {
+  if (customStyleType === 'big') styles = customBigButtonStyle;
+
   return (
     <AntButton
       shape={shape}
@@ -33,3 +36,13 @@ export default function SimpleButton({
     </AntButton>
   );
 }
+
+const customBigButtonStyle = {
+  color: 'white',
+  textTransform: 'uppercase',
+  fontFamily: 'Quicksand',
+  padding: '10px',
+  letterSpacing: '0.8x',
+  cursor: 'pointer',
+  height: '100%'
+};

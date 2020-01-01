@@ -1,18 +1,10 @@
 import React from 'react';
+import styled from 'styled-components';
 
-export default function InvestmentsLogo() {
+export default function InvestmentsLogo({ styles }) {
   return (
-    <div className="logo">
-      <a
-        href="https://4dinvestments.org"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <img
-          src="images/logo/logo-4dinvestments.png"
-          alt="4dinvestments-logo"
-        />
-      </a>
-    </div>
+    <a href="https://4dinvestments.org" styles={styles}>
+      <img src="images/logo/logo-4dinvestments.png" alt="4dinvestments-logo" />
+    </a>
   );
 }

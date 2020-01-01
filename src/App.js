@@ -8,10 +8,12 @@ import AboutUs from './pages/AboutUs/AboutUs';
 import Error from './pages/Error/Error';
 
 import Footer from './components/nav/Footer/Footer';
+import PreLoader from './components/display/PreLoader/PreLoader';
 
 export default function App() {
   return (
     <div className="App">
+      <PreLoader />
       <div className="nk-wrap">
         <Switch>
           <Route exact path="/" component={Home} />

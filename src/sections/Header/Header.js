@@ -46,10 +46,7 @@ export default function Header() {
                       type="danger"
                       text="Enter Exchange"
                       href="https://google.com"
-                      styles={{
-                        color: 'white',
-                        textTransform: 'uppercase'
-                      }}
+                      customStyleType="big"
                     />
                   </ButtonContainer>
                 </div>
@@ -62,4 +59,11 @@ export default function Header() {
   );
 }
 
-const ButtonContainer = styled.div``;
+const ButtonContainer = styled.div`
+  color: white;
+  text-transform: uppercase;
+  font-family: Quicksand;
+  padding: 7px;
+  letter-spacing: 0.5px;
+  height: 100%;
+`;

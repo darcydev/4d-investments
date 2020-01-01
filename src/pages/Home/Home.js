@@ -22,7 +22,6 @@ export default function Home() {
       <Roadmap />
       <Team />
       <Documents />
-      {/* // */}
       <section className="section">
         <div className="container container-xxl">
           <div className="nk-block">
