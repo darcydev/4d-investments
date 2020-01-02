@@ -5,16 +5,17 @@ import { Button as AntButton } from 'antd';
 
 export default function SimpleButton({
   shape = 'round',
-  type = undefined,
+  type = 'primary',
   icon = undefined,
   customTextIcon = undefined,
   theme = undefined,
   size = 'large',
-  text = undefined,
+  text = 'Btn Text',
   href = undefined,
   styles = undefined,
   classes = undefined,
-  customStyleType = undefined
+  customStyleType = undefined,
+  disabled = false
 }) {
   if (customStyleType === 'big') styles = customBigButtonStyle;
 
@@ -30,6 +31,7 @@ export default function SimpleButton({
       rel="noopener noreferrer"
       style={styles}
       className={classes}
+      disabled={disabled}
     >
       {customTextIcon}
       {text}

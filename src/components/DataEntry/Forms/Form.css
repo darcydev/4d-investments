@@ -1,0 +1,29 @@
+.ant-form .ant-form-item .ant-form-item-label label {
+  color: wheat;
+  text-transform: uppercase;
+  font-family: "Quicksand";
+  letter-spacing: 1.5px;
+  font-size: 0.8rem;
+}
+
+.ant-form .ant-form-item .ant-form-item-control input {
+  background: inherit;
+  border: 1px solid white;
+  color: white;
+  min-height: 45px;
+}
+
+.ant-form .ant-form-item .ant-form-item-control-wrapper .has-error .ant-form-explain {
+  /*   font-size: 0.8rem;
+  padding-top: 7px; */
+  /* CURRENTLY HIDDEN -- not sure how to do it in the component */
+  display: none;
+}
+
+.ant-form .ant-form-item .ant-form-item-control-wrapper .has-error input {
+  border: 1px solid #ff8787;
+}
+
+#horizontal_contact_text {
+  min-height: 80px;
+}

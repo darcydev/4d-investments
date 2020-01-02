@@ -32,6 +32,13 @@ const data = [
       { title: 'ICO Question 1', answer: 'ICO Answer 1' },
       { title: 'ICO Question 2', answer: 'ICO Answer 2' }
     ]
+  },
+  {
+    tab: 'Legal',
+    questions: [
+      { title: 'Legal Question 1', answer: 'Legal Answer 1' },
+      { title: 'Legal Question 2', answer: 'Legal Answer 2' }
+    ]
   }
 ];
 
