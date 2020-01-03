@@ -2,10 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
-import SectionHeading from '../../components/display/Headings/SectionHeading';
+import SectionHeading from '../../components/DataDisplay/Headings/SectionHeading';
+import InnerSectionHeading from '../../components/DataDisplay/Headings/InnerSectionHeading';
 import InvestmentsLogo from '../../components/display/Logos/InvestmentsLogo';
 import SimpleButton from '../../components/UI/Buttons/SimpleButton';
-import Title from '../../components/display/Headings/Title';
 
 export default function Error() {
   return (
@@ -21,7 +21,7 @@ export default function Error() {
                 <div className="col-xl-6 col-md-7 col-sm-9">
                   <div className="position-relative">
                     <SectionHeading heading="Page Not Found" />
-                    <Title
+                    <InnerSectionHeading
                       title="Oops!"
                       subTitle="We are very sorry for inconvenience. It looks like you’re
                       try to access a page that either has been deleted or never

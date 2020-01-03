@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { List, Avatar, Icon } from 'antd';
+import { Icon } from 'antd';
 
 export default function PlatformListItem({
   icon = <Icon type="star" theme="twoTone" twoToneColor="#52c41a" />,

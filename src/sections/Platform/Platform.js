@@ -1,13 +1,11 @@
 import React from 'react';
-import styled from 'styled-components';
-import { List, Avatar, Icon } from 'antd';
+import { Icon } from 'antd';
 
-import SectionHeading from '../../components/display/Headings/SectionHeading';
-import Title from '../../components/display/Headings/Title';
+import SectionHeading from '../../components/DataDisplay/Headings/SectionHeading';
+import InnerSectionHeading from '../../components/DataDisplay/Headings/InnerSectionHeading';
 
 import SimpleTab from '../../components/UI/Tabs/SimpleTab';
-import IconList from '../../components/display/Lists/IconList';
-import PlatformListItem from './PlatformListItem';
+import SimpleList from '../../components/DataDisplay/Lists/SimpleList';
 
 export default function Platform() {
   return (
@@ -65,14 +63,34 @@ export default function Platform() {
                 </div>
                 <div className="col-lg-5">
                   <div className="nk-block-text mgb-m30">
-                    <Title
+                    <InnerSectionHeading
                       title="An Open Platform for our Participators"
                       subTitle="Each participator can choose the trader and to sign a contract."
                     />
-                    <PlatformListItem />
-                    <PlatformListItem />
-                    <PlatformListItem />
-                    <PlatformListItem />
+                    <SimpleList
+                      data={[
+                        {
+                          icon: (
+                            <Icon
+                              type="star"
+                              theme="twoTone"
+                              twoToneColor="#52c41a"
+                            />
+                          ),
+                          content: 'Platform Advantage Content #1'
+                        },
+                        {
+                          icon: (
+                            <Icon
+                              type="star"
+                              theme="twoTone"
+                              twoToneColor="#52c41a"
+                            />
+                          ),
+                          content: 'Platform Advantage Content #2'
+                        }
+                      ]}
+                    />
                   </div>
                 </div>
               </div>
@@ -111,10 +129,7 @@ export default function Platform() {
                       Each participator can choose the trader and to sign a
                       contract.
                     </p>
-                    <PlatformListItem />
-                    <PlatformListItem />
-                    <PlatformListItem />
-                    <PlatformListItem />
+                    <SimpleList />
                   </div>
                 </div>
               </div>

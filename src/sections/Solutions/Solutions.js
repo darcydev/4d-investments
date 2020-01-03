@@ -1,7 +1,6 @@
 import React from 'react';
-import { List, Icon } from 'antd';
 
-import SectionHeading from '../../components/display/Headings/SectionHeading';
+import SectionHeading from '../../components/DataDisplay/Headings/SectionHeading';
 import SolutionItem from './SolutionItem';
 import SimpleButton from '../../components/UI/Buttons/SimpleButton';
 

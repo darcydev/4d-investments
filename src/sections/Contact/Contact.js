@@ -1,7 +1,7 @@
 import React from 'react';
 import { Form } from 'antd';
 
-import SectionHeading from '../../components/display/Headings/SectionHeading';
+import SectionHeading from '../../components/DataDisplay/Headings/SectionHeading';
 import ContactForm from '../../components/DataEntry/Forms/ContactForm';
 
 export default function Contact() {

@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-export default function Title({
+export default function InnerSectionHeading({
   title = 'default title',
   subTitle = 'this is the default subtitle'
 }) {

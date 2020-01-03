@@ -1,5 +1,6 @@
 import React from 'react';
-import SectionHeading from '../../components/display/Headings/SectionHeading';
+
+import SectionHeading from '../../components/DataDisplay/Headings/SectionHeading';
 import DocumentItem from './DocumentItem';
 
 const data = [];

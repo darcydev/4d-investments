@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import NavBar from '../../components/nav/NavBar/NavBar';
+import NavBar from '../../components/Navigation/NavBar';
 import SimpleButton from '../../components/UI/Buttons/SimpleButton';
 
 export default function Header() {
