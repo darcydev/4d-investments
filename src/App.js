@@ -7,8 +7,14 @@ import Home from './pages/Home/Home';
 import AboutUs from './pages/AboutUs/AboutUs';
 import Error from './pages/Error/Error';
 
-import Footer from './components/nav/Footer/Footer';
+import Footer from './sections/Footer/Footer';
+
 import PreLoader from './components/display/PreLoader/PreLoader';
+import InvestmentsLogo from './components/Logos/InvestmentsLogo';
+
+// data
+import { NAV_BAR_LINKS } from './data/NavLinks';
+import { NAME, YEAR, NUMBER, ABOUT, CONTACT_DETAILS } from './data/CompanyInfo';
 
 export default function App() {
   return (
@@ -19,7 +25,14 @@ export default function App() {
           <Route exact path="/" component={Home} />
           <Route component={Error} />
         </Switch>
-        <Footer />
+        <Footer
+          companyName={NAME}
+          companyYear={YEAR}
+          navLinks={NAV_BAR_LINKS}
+          logo={<InvestmentsLogo />}
+          aboutCompanyText={ABOUT}
+          contactDetails={CONTACT_DETAILS}
+        />
       </div>
     </div>
   );

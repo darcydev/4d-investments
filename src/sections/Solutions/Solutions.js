@@ -1,4 +1,5 @@
 import React from 'react';
+import styled from 'styled-components';
 
 import SectionHeading from '../../components/DataDisplay/Headings/SectionHeading';
 import SolutionItem from './SolutionItem';
@@ -42,19 +43,15 @@ export default function Solutions() {
                 <SolutionItem />
                 <SolutionItem />
                 <SolutionItem />
+              </div>
+              <ButtonContainer>
                 <SimpleButton
                   type="danger"
                   text="Enter Exchange"
                   href="https://google.com"
                   customStyleType="big"
                 />
-                <SimpleButton
-                  type="danger"
-                  text="Enter Platform"
-                  href="https://google.com"
-                  customStyleType="big"
-                />
-              </div>
+              </ButtonContainer>
             </div>
           </div>
         </div>
@@ -62,3 +59,5 @@ export default function Solutions() {
     </section>
   );
 }
+
+const ButtonContainer = styled.div``;

@@ -1,8 +1,12 @@
 import React from 'react';
-import { Form } from 'antd';
+import { Form, Row, Col, Icon } from 'antd';
+import { FaDiscord } from 'react-icons/fa';
 
 import SectionHeading from '../../components/DataDisplay/Headings/SectionHeading';
 import ContactForm from '../../components/DataEntry/Forms/ContactForm';
+import SimpleList from '../../components/DataDisplay/Lists/SimpleList';
+
+import { CONTACT_DETAILS } from '../../data/CompanyInfo';
 
 export default function Contact() {
   const WrappedContactForm = Form.create({ name: 'horizontal_contact' })(
@@ -12,105 +16,43 @@ export default function Contact() {
   return (
     <section className="section" id="contact">
       <div className="container">
-        <div className="nk-block nk-block-about">
-          <div className="ant-form">
-            <div className="row justify-content-between align-items-center gutter-vr-50px">
-              <div className="col-lg-6">
-                <div className="nk-block-text">
-                  <SectionHeading
-                    heading="Contact us"
-                    subHeading="We are always open and we welcome and questions you have for
+        <SectionHeading
+          heading="Contact us"
+          subHeading="We are always open and we welcome and questions you have for
                     our team. If you wish to get in touch, please fill out the
                     form below. Someone from our team will get back to you
                     shortly."
-                  />
-                  <WrappedContactForm />
-                </div>
-              </div>
+        />
+        <Row className="flex-container-lg">
+          <Col lg={10} md={24}>
+            <WrappedContactForm />
+          </Col>
+          <Col lg={14} md={24}>
+            <div
+              className="nk-block-contact nk-block-contact-s1 animated"
+              data-animate="fadeInUp"
+              data-delay="0.1"
+            >
+              <SimpleList
+                data={[
+                  {
+                    icon: <em className="contact-icon fas fa-phone" />,
+                    content: '+123 456 789'
+                  },
+                  {
+                    icon: <em className="contact-icon fas fa-envelope" />,
+                    content: 'info@4dinvestments.org'
+                  },
+                  {
+                    icon: <em className="contact-icon fab fa-discord" />,
+                    content: 'Join us on Discord'
+                  }
+                ]}
+              />
+              <div className="nk-circle-animation nk-df-center white small" />
             </div>
-          </div>
-          <div className="row justify-content-between align-items-center gutter-vr-50px">
-            <div className="col-lg-5 text-center order-lg-first">
-              <div
-                className="nk-block-contact nk-block-contact-s1  animated"
-                data-animate="fadeInUp"
-                data-delay="0.1"
-              >
-                <ul className="contact-list">
-                  <li
-                    className="animated"
-                    data-animate="fadeInUp"
-                    data-delay="0.2"
-                  >
-                    <em className="contact-icon fas fa-phone" />
-                    <div className="contact-text">
-                      <span>+44 0123 4567</span>
-                    </div>
-                  </li>
-                  <li
-                    className="animated"
-                    data-animate="fadeInUp"
-                    data-delay="0.3"
-                  >
-                    <em className="contact-icon fas fa-envelope" />
-                    <div className="contact-text">
-                      <span>info@company.com</span>
-                    </div>
-                  </li>
-                  <li
-                    className="animated"
-                    data-animate="fadeInUp"
-                    data-delay="0.4"
-                  >
-                    <em className="contact-icon fas fa-paper-plane" />
-                    <div className="contact-text">
-                      <span>Join us on Telegram</span>
-                    </div>
-                  </li>
-                </ul>
-                <div className="nk-circle-animation nk-df-center white small" />
-                {/* .circle-animation */}
-              </div>
-              <ul
-                className="social-links social-links-s2 justify-content-center animated"
-                data-animate="fadeInUp"
-                data-delay="0.6"
-              >
-                <li>
-                  <a href="#">
-                    <em className="fab fa-twitter" />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <em className="fab fa-medium-m" />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <em className="fab fa-facebook-f" />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <em className="fab fa-youtube" />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <em className="fab fa-bitcoin" />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <em className="fab fa-github" />
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        {/* .block @e */}
+          </Col>
+        </Row>
       </div>
     </section>
   );

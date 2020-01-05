@@ -1,6 +1,8 @@
 import React from 'react';
+import { Layout } from 'antd';
 
 import EcoSystem from '../../sections/EcoSystem/EcoSystem';
+import Consultancy from '../../sections/Consultancy/Consultancy';
 import Platform from '../../sections/Platform/Platform';
 import Solutions from '../../sections/Solutions/Solutions';
 import TokenSale from '../../sections/TokenSale/TokenSale';
@@ -11,11 +13,14 @@ import Contact from '../../sections/Contact/Contact';
 import Header from '../../sections/Header/Header';
 import FAQs from '../../sections/FAQs/FAQs';
 
+import SectionHeading from '../../components/DataDisplay/Headings/SectionHeading';
+
 export default function Home() {
   return (
     <main className="nk-pages tc-light">
       <Header />
       <EcoSystem />
+      <Consultancy />
       <Platform />
       <Solutions />
       <TokenSale />
@@ -27,16 +32,7 @@ export default function Home() {
           <div className="nk-block">
             <div className="row justify-content-between gutter-vr-80px">
               <div className="col-lg-6">
-                <div className="section-head section-head-s2 text-center ">
-                  <h2
-                    className="title animated"
-                    data-animate="fadeInUp"
-                    data-delay="0.1"
-                    title="Press"
-                  >
-                    IN PRESS
-                  </h2>
-                </div>
+                <SectionHeading heading="IN PRESS" />
                 <div className="nk-block">
                   <div
                     className="has-carousel carousel-nav-center pdb-l"
@@ -143,54 +139,9 @@ export default function Home() {
                           <div
                             className="partner-logo animated"
                             data-animate="fadeInUp"
-                            data-delay="0.25"
-                          >
-                            <img src="images/partners/b-light.png" alt="" />
-                          </div>
-                        </div>
-                        <div className="col-6 col-sm-4">
-                          <div
-                            className="partner-logo animated"
-                            data-animate="fadeInUp"
-                            data-delay="0.3"
-                          >
-                            <img src="images/partners/c-light.png" alt="" />
-                          </div>
-                        </div>
-                        <div className="col-6 col-sm-4">
-                          <div
-                            className="partner-logo animated"
-                            data-animate="fadeInUp"
                             data-delay="0.35"
                           >
                             <img src="images/partners/d-light.png" alt="" />
-                          </div>
-                        </div>
-                        <div className="col-6 col-sm-4">
-                          <div
-                            className="partner-logo animated"
-                            data-animate="fadeInUp"
-                            data-delay="0.4"
-                          >
-                            <img src="images/partners/e-light.png" alt="" />
-                          </div>
-                        </div>
-                        <div className="col-6 col-sm-4">
-                          <div
-                            className="partner-logo animated"
-                            data-animate="fadeInUp"
-                            data-delay="0.45"
-                          >
-                            <img src="images/partners/f-light.png" alt="" />
-                          </div>
-                        </div>
-                        <div className="col-6 col-sm-4">
-                          <div
-                            className="partner-logo animated"
-                            data-animate="fadeInUp"
-                            data-delay="0.5"
-                          >
-                            <img src="images/partners/a-light.png" alt="" />
                           </div>
                         </div>
                         <div className="col-6 col-sm-4">
@@ -216,18 +167,8 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              {/* .col */}
               <div className="col-lg-5">
-                <div className="section-head section-head-s2 text-center">
-                  <h2
-                    className="title animated"
-                    data-animate="fadeInUp"
-                    data-delay="0.7"
-                    title="Update"
-                  >
-                    NEWS
-                  </h2>
-                </div>
+                <SectionHeading heading="NEWS" />
                 <div className="nk-block">
                   <div
                     className="has-carousel carousel-nav-center"

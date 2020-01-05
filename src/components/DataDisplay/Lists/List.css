@@ -16,3 +16,7 @@
   font-size: 16px;
   color: #97afd5;
 } */
+
+.ant-list-split .ant-list-item {
+  border-bottom: none;
+}

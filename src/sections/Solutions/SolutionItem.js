@@ -6,7 +6,7 @@ export default function SolutionItem({
   icon = (
     <Icon type="check-circle" style={{ fontSize: '36px', color: '#f42f54' }} />
   ),
-  content = 'this is the template item content. Please input the real content'
+  content = 'this is the template item content'
 }) {
   return (
     <div

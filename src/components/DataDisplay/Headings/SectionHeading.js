@@ -23,4 +23,6 @@ export default function SectionHeading({
   );
 }
 
-const Container = styled.div``;
+const Container = styled.div`
+  text-align: center;
+`;

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Form, Icon, Input, Button } from 'antd';
+import { Form, Input } from 'antd';
 
 import './Form.css';
 
@@ -71,14 +71,6 @@ export default class ContactForm extends Component {
         </Form.Item>
         <Form.Item>
           <SimpleButton disabled={hasErrors(getFieldsError())} text="Send" />
-          {/*           <Button
-            type="primary"
-            size="large"
-            htmlType="submit"
-            disabled={hasErrors(getFieldsError())}
-          >
-            Send
-          </Button> */}
         </Form.Item>
       </Form>
     );

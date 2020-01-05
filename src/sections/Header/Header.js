@@ -26,21 +26,8 @@ export default function Header() {
               </div>
               <div className="col-xl-5 col-lg-6 col-sm-10 text-center text-lg-left">
                 <div className="banner-caption">
-                  <h1
-                    className="title title-lg ttu animated"
-                    data-animate="fadeInUp"
-                    data-delay=".8"
-                  >
-                    4D Investments
-                  </h1>
-                  <p
-                    className="lead animated"
-                    data-animate="fadeInUp"
-                    data-delay=".9"
-                  >
-                    by which it shall not be diminished during their Continuance
-                    in Office.
-                  </p>
+                  <HeroTitle>4D Investments</HeroTitle>
+                  <h4 className="lead">insert some nice intro text here!</h4>
                   <ButtonContainer>
                     <SimpleButton
                       type="danger"
@@ -66,4 +53,8 @@ const ButtonContainer = styled.div`
   padding: 7px;
   letter-spacing: 0.5px;
   height: 100%;
+`;
+
+const HeroTitle = styled.h1`
+  font-size: 55px;
 `;
