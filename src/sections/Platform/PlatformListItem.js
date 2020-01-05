@@ -7,11 +7,7 @@ export default function PlatformListItem({
   content = 'this is default list item content'
 }) {
   return (
-    <div
-      className="feature feature-inline feature-middle animated"
-      data-animate="fadeInUp"
-      data-delay="0.6"
-    >
+    <div className="feature feature-inline feature-middle">
       <div className="feature-icon feature-icon-md">{icon}</div>
       <div className="feature-text">
         <p>

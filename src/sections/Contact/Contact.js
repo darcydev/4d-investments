@@ -28,11 +28,7 @@ export default function Contact() {
             <WrappedContactForm />
           </Col>
           <Col lg={14} md={24}>
-            <div
-              className="nk-block-contact nk-block-contact-s1 animated"
-              data-animate="fadeInUp"
-              data-delay="0.1"
-            >
+            <div className="nk-block-contact nk-block-contact-s1">
               <SimpleList
                 data={[
                   {

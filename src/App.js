@@ -5,6 +5,7 @@ import 'antd/dist/antd.css';
 
 import Home from './pages/Home/Home';
 import AboutUs from './pages/AboutUs/AboutUs';
+import ContactUs from './pages/ContactUs/ContactUs';
 import Error from './pages/Error/Error';
 
 import Footer from './sections/Footer/Footer';
@@ -23,6 +24,9 @@ export default function App() {
       <div className="nk-wrap">
         <Switch>
           <Route exact path="/" component={Home} />
+          <Route exact path="/about" component={AboutUs} />
+          {/* <Route exact path="/work" component={Work} /> */}
+          <Route exact path="/contact" component={ContactUs} />
           <Route component={Error} />
         </Switch>
         <Footer

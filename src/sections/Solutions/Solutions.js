@@ -19,11 +19,7 @@ export default function Solutions() {
         <div className="nk-block">
           <div className="row align-items-center justify-content-center justify-content-xl-between gutter-vr-30px">
             <div className="col-xxl-6 col-xl-6 col-lg-8">
-              <div
-                className="nk-block-img nk-block-plx animated"
-                data-animate="fadeInUp"
-                data-delay="0.3"
-              >
+              <div className="nk-block-img nk-block-plx">
                 <img
                   className="shadow rounded"
                   src="images/app-screens/sc-medium-b.png"

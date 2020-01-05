@@ -24,11 +24,7 @@ export default function Platform() {
         <div className="nk-block">
           <div className="row justify-content-center">
             <div className="col-xl-6 col-lg-8">
-              <ul
-                className="nav tab-nav tab-nav-btn-bdr-s2 justify-content-center justify-content-sm-between pb-4 pb-sm-5 animated"
-                data-animate="fadeInUp"
-                data-delay="0.2"
-              >
+              <ul className="nav tab-nav tab-nav-btn-bdr-s2 justify-content-center justify-content-sm-between pb-4 pb-sm-5">
                 <li>
                   <a className="active" data-toggle="tab" href="#tab-1-1">
                     FOR Participators
@@ -98,11 +94,7 @@ export default function Platform() {
             <div className="tab-pane fade" id="tab-1-2">
               <div className="row align-items-center justify-content-between gutter-vr-40px">
                 <div className="col-lg-6 order-lg-last">
-                  <div
-                    className="nk-block-img nk-block-ca animated"
-                    data-animate="fadeInUp"
-                    data-delay="0.2"
-                  >
+                  <div className="nk-block-img nk-block-ca">
                     <div className="nk-circle-animation nk-df-center fast" />
                     {/* .circle-animation */}
                     <img
@@ -114,18 +106,10 @@ export default function Platform() {
                 </div>
                 <div className="col-lg-5">
                   <div className="nk-block-text mgb-m30">
-                    <h2
-                      className="title title-md animated"
-                      data-animate="fadeInUp"
-                      data-delay="0.2"
-                    >
+                    <h2 className="title title-md">
                       A Open Platform for our Participators
                     </h2>
-                    <p
-                      className="animated"
-                      data-animate="fadeInUp"
-                      data-delay="0.2"
-                    >
+                    <p>
                       Each participator can choose the trader and to sign a
                       contract.
                     </p>

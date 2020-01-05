@@ -9,11 +9,7 @@ export default function SolutionItem({
   content = 'this is the template item content'
 }) {
   return (
-    <div
-      className="feature feature-inline animated"
-      data-animate="fadeInUp"
-      data-delay="0.4"
-    >
+    <div className="feature feature-inline">
       <div className="feature-icon feature-icon-md">{icon}</div>
       <div className="feature-text">
         <p>{content}</p>

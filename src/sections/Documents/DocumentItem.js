@@ -13,7 +13,7 @@ export default function DocumentItem({
 
   return (
     <div className="col-sm-4 col-lg-4">
-      <div className="doc animated" data-animate="fadeInUp" data-delay="0.3">
+      <div className="doc">
         <div className="doc-photo doc-shape doc-shape-a">
           <img src={imageSrc} alt="doc" />
         </div>

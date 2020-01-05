@@ -6,7 +6,7 @@ export default function TeamItem({
   position = 'Team Member'
 }) {
   return (
-    <div className="item animated" data-animate="fadeInUp" data-delay="0.3">
+    <div className="item">
       <div className="team team-s2 team-odd">
         <div className="team-photo team-photo-s2">
           <img src={imgSrc} alt={`${name}-profile`} />

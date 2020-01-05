@@ -53,11 +53,7 @@ export default function() {
       </div>
       <div className="container container-xxl">
         <div className="nk-block">
-          <div
-            className="roadmap-wrap roadmap-wrap-ovl-right text-center animated"
-            data-animate="fadeInUp"
-            data-delay="0.3"
-          >
+          <div className="roadmap-wrap roadmap-wrap-ovl-right text-center">
             <div className="roadmap-line-s2" />
             <div
               className="roadmap-slider has-carousel carousel-nav-center"

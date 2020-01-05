@@ -16,11 +16,7 @@ export default function Header() {
           <div className="container container-xxl pt-5">
             <div className="row align-items-center justify-content-center justify-content-lg-between gutter-vr-30px">
               <div className="col-lg-6 order-lg-last">
-                <div
-                  className="banner-gfx banner-gfx-auto animated"
-                  data-animate="fadeInUp"
-                  data-delay=".7"
-                >
+                <div className="banner-gfx banner-gfx-auto">
                   <img src="images/azalea/gfx-e.png" alt="header" />
                 </div>
               </div>

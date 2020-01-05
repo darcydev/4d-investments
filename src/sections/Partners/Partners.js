@@ -11,13 +11,11 @@ export default function Partners() {
         Our Partners
       </h6>
       <ul
-        className="has-carousel partner-list justify-content-center animated"
+        className="has-carousel partner-list justify-content-center"
         data-items={7}
         data-items-mobile={2}
         data-auto="true"
         data-loop="true"
-        data-animate="fadeInUp"
-        data-delay="0.75"
       >
         <li className="partner-logo">
           <img src="images/partners/a-light.png" alt="" />

@@ -9,16 +9,12 @@ export default function SectionHeading({
   return (
     <Container className="section-head section-head-s2">
       <h2
-        className="title title-xl animated"
-        data-animate="fadeInUp"
-        data-delay="0.1"
+        className="title title-xl"
         title={backgroundHeading ? backgroundHeading : heading}
       >
         {heading}
       </h2>
-      <p className="animated" data-animate="fadeInUp" data-delay="0.2">
-        {subHeading}
-      </p>
+      <p>{subHeading}</p>
     </Container>
   );
 }
