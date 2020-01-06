@@ -24,11 +24,7 @@ export default function EcoSystem() {
             <EcoSystemItem index={3} />
             <EcoSystemItem index={4} />
           </div>
-          <div
-            className="bg-image bg-contain bg-bottom-center bg-ecosystems animated d-none d-sm-block"
-            data-animate="fadeInUp"
-            data-delay="0.2"
-          >
+          <div className="bg-image bg-contain bg-bottom-center bg-ecosystems d-none d-sm-block">
             <img src="images/globe-particle.png" alt="globe" />
           </div>
         </div>

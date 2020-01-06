@@ -7,21 +7,26 @@ import SimpleList from '../../components/DataDisplay/Lists/SimpleList';
 export default function Consultancy() {
   return (
     <section>
-      <SectionHeading
-        heading="4D Consultancy"
-        backgroundHeading="consultancy"
-        subHeading="All Bills for raising Revenue shall originate in the House of Representatives may be made prior to the Duties of the"
-      />
-      <Content>
-        <SimpleList />
-        <p>
-          Mit Ausnahme von Bedienungsrechten von Hypotheken abzuziehen ist, als
-          die Summe sämtlicher Positionen, die insgesamt mehr als 10% des harten
-          Kernkapital
-        </p>
-      </Content>
+      <div className="container">
+        <SectionHeading
+          heading="4D Consultancy"
+          backgroundHeading="consultancy"
+          subHeading="All Bills for raising Revenue shall originate in the House of Representatives may be made prior to the Duties of the"
+        />
+        <Content className="row">
+          <ImageContainer className="col-lg-6">
+            <img src="/images/lavender/gfx-x-light.png" alt="consultancy" />
+          </ImageContainer>
+          <SimpleList />
+        </Content>
+      </div>
     </section>
   );
 }
 
-const Content = styled.div``;
+const Content = styled.div`
+  justify-content: center;
+`;
+const ImageContainer = styled.div`
+  max-width: 400px;
+`;

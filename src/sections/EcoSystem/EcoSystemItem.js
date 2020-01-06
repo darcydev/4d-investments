@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function EcoSystemItem({
   index = 1,
-  heading = 'TEMPLATE HEADING',
+  heading = 'Template Heading',
   content = 'One International Marketplace that combines online store and services around the world'
 }) {
   return (

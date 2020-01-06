@@ -1,7 +1,9 @@
 import React from 'react';
 
-import SectionHeading from '../../components/DataDisplay/Headings/SectionHeading';
 import DocumentItem from './DocumentItem';
+
+import SectionHeading from '../../components/DataDisplay/Headings/SectionHeading';
+import ImageCarousel from '../../components/DataDisplay/Carousel/ImageCarousel';
 
 const data = [];
 
@@ -28,6 +30,9 @@ export default function Documents() {
             <DocumentItem downloadLink="enter doc link" />
           </div>
         </div>
+      </div>
+      <div className="nk-block block-partners">
+        <ImageCarousel title="In the Press" />
       </div>
     </section>
   );
