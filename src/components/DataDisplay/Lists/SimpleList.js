@@ -2,8 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import { List, Icon } from 'antd';
 
-import './List.css';
-
 export default function SimpleList({
   itemLayout = 'horizontal',
   styles = undefined,
@@ -12,12 +10,22 @@ export default function SimpleList({
   data = [
     {
       title: 'Default list title',
-      icon: <Icon type="star" theme="twoTone" twoToneColor="#52c41a" />,
+      icon: (
+        <Icon
+          type="check-circle"
+          style={{ fontSize: '36px', color: '#f42f54' }}
+        />
+      ),
       content: 'Default list content 1'
     },
     {
       title: 'Default list title',
-      icon: <Icon type="star" theme="twoTone" twoToneColor="#52c41a" />,
+      icon: (
+        <Icon
+          type="check-circle"
+          style={{ fontSize: '36px', color: '#f42f54' }}
+        />
+      ),
       content: 'Default list content 2'
     }
   ]
@@ -45,17 +53,12 @@ export default function SimpleList({
 }
 
 const Container = styled.div`
-  .ant-list.split .ant-list-item {
+  .ant-list-split .ant-list-item {
     border-bottom: none;
   }
 
-  .ant-list.item i {
-    min-width: 15% !important;
-    text-align: left !important;
-  }
-
-  .ant-item-list-meta {
-    padding-left: 40px;
+  .ant-list-item-meta-content {
+    margin-left: 40px !important;
   }
 
   .ant-list-item-meta-description {

@@ -2,8 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 
 import SectionHeading from '../../components/DataDisplay/Headings/SectionHeading';
-import SolutionItem from './SolutionItem';
 import SimpleButton from '../../components/UI/Buttons/SimpleButton';
+import SimpleList from '../../components/DataDisplay/Lists/SimpleList';
 
 export default function Solutions() {
   return (
@@ -33,13 +33,7 @@ export default function Solutions() {
               </div>
             </div>
             <div className="col-xxl-5 col-xl-6 col-lg-8">
-              <div className="nk-block-text">
-                <SolutionItem />
-                <SolutionItem />
-                <SolutionItem />
-                <SolutionItem />
-                <SolutionItem />
-              </div>
+              <SimpleList />
               <ButtonContainer>
                 <SimpleButton
                   type="danger"

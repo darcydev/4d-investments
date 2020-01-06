@@ -3,8 +3,20 @@ import { Icon } from 'antd';
 
 export const NAME = '4D Investments';
 export const YEAR = '2019';
-export const NUMBER = '';
 export const ABOUT = 'Insert a paragraph about the company';
+
+export const COMPANY_REGISTRATION = [
+  {
+    name: '4D Investments Ltd',
+    location: 'Seychelles',
+    number: '202804'
+  },
+  {
+    name: '4D Investments Finland Oy',
+    location: 'Finland',
+    number: '3101015-6'
+  }
+];
 
 export const CONTACT_DETAILS = [
   {
@@ -17,6 +29,6 @@ export const CONTACT_DETAILS = [
   },
   {
     icon: <Icon type="compass" theme="twoTone" />,
-    content: 'Global Gateway 8 Pue De La Perle, Seychelles'
+    content: '8 Pue De La Perle, Seychelles'
   }
 ];

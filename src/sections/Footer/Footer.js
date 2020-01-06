@@ -20,7 +20,18 @@ export default function Footer({
   logo = <Icon type="smile" theme="twoTone" />,
   companyName = 'Fake Company Name',
   companyYear = '2019',
-  companyRegistration = '123456789 Seychelles',
+  registration = [
+    {
+      name: '4D Investments Ltd',
+      location: 'Seychelles',
+      number: '202804'
+    },
+    {
+      name: '4D Investments Finland Oy',
+      location: 'Finland',
+      number: '3101015-6'
+    }
+  ],
   aboutCompanyText = 'Cillum qui non laborum laboris',
   contactDetails = [
     {
@@ -42,20 +53,26 @@ export default function Footer({
   ));
 
   const CONTACT_LIST_MARKUP = <SimpleList data={contactDetails} />;
+  const REGISTRATION_MARKUP = registration.map((v, i) => (
+    <li
+      key={`${i}: ${v.number}`}
+      style={{ padding: '2px 0' }}
+    >{`${v.name} (${v.location}) #${v.number}`}</li>
+  ));
 
   return (
-    <Container id={id} className={`section ${classes}`}>
+    <Container id={id} className={`${classes}`}>
       <Row gutter={[0, 24]}>
-        <Col span={8}>
+        <Col md={10} sm={24}>
           <ColHeading>{companyName}</ColHeading>
           <h6>© {companyYear}</h6>
-          <Text>{companyRegistration}</Text>
+          <ListContainer>{REGISTRATION_MARKUP}</ListContainer>
           <LogoContainer>{logo}</LogoContainer>
         </Col>
-        <Col span={8}>
-          <ListContainer>{CONTACT_LIST_MARKUP}</ListContainer>
+        <Col md={6} sm={24}>
+          <>{CONTACT_LIST_MARKUP}</>
         </Col>
-        <Col span={8}>
+        <Col md={8} sm={24}>
           <ColHeading>About the company</ColHeading>
           <Text>{aboutCompanyText}</Text>
         </Col>
@@ -93,12 +110,14 @@ const Container = styled.footer`
 `;
 
 const LogoContainer = styled.div``;
-const ListContainer = styled.div``;
+const ListContainer = styled.div`
+  color: #697a95;
+  list-style: none;
+  padding: 10px 0;
+`;
 
 const ColHeading = styled.h5`
   color: white;
 `;
 
-const Text = styled.p`
-  color: #697a95;
-`;
+const Text = styled.p``;

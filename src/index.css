@@ -12,8 +12,15 @@ code {
 
 section,
 footer {
-  max-width: 1060px;
   margin: auto;
+}
+
+section {
+  max-width: 1060px;
+}
+
+footer {
+  max-width: 1460px;
 }
 
 .flex-container-sm,

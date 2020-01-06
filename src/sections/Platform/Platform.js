@@ -10,16 +10,7 @@ import SimpleList from '../../components/DataDisplay/Lists/SimpleList';
 export default function Platform() {
   return (
     <section className="section" id="platform">
-      <div className="container">
-        <div className="row justify-content-center text-center">
-          <div className="col-lg-6">
-            <SectionHeading
-              heading="Our Platform"
-              backgroundHeading="Our Platform"
-            />
-          </div>
-        </div>
-      </div>
+      <SectionHeading heading="Our Platform" />
       <div className="container container-xxl">
         <div className="nk-block">
           <div className="row justify-content-center">
@@ -27,7 +18,7 @@ export default function Platform() {
               <ul className="nav tab-nav tab-nav-btn-bdr-s2 justify-content-center justify-content-sm-between pb-4 pb-sm-5">
                 <li>
                   <a className="active" data-toggle="tab" href="#tab-1-1">
-                    FOR Participators
+                    For Participators
                   </a>
                 </li>
                 <li className="tab-nav-sap d-none d-sm-block" />
@@ -39,55 +30,25 @@ export default function Platform() {
               </ul>
             </div>
           </div>
-          <div className="tab-content">
+          <div className="tab-content" style={{ marginTop: '40px' }}>
             <div className="tab-pane fade show active" id="tab-1-1">
               <div className="row align-items-center justify-content-between gutter-vr-40px">
                 <div className="col-lg-6 order-lg-last">
-                  <div
-                    className="nk-block-img nk-block-ca animated"
-                    data-animate="fadeInUp"
-                    data-delay="0.2"
-                  >
+                  <div className="nk-block-img nk-block-ca">
                     <div className="nk-circle-animation nk-df-center fast" />
-                    {/* .circle-animation */}
                     <img
                       className="shadow rounded"
                       src="images/app-screens/sc-medium-a.png"
-                      alt=""
+                      alt="exchange"
                     />
                   </div>
                 </div>
                 <div className="col-lg-5">
-                  <div className="nk-block-text mgb-m30">
-                    <InnerSectionHeading
-                      title="An Open Platform for our Participators"
-                      subTitle="Each participator can choose the trader and to sign a contract."
-                    />
-                    <SimpleList
-                      data={[
-                        {
-                          icon: (
-                            <Icon
-                              type="star"
-                              theme="twoTone"
-                              twoToneColor="#52c41a"
-                            />
-                          ),
-                          content: 'Platform Advantage Content #1'
-                        },
-                        {
-                          icon: (
-                            <Icon
-                              type="star"
-                              theme="twoTone"
-                              twoToneColor="#52c41a"
-                            />
-                          ),
-                          content: 'Platform Advantage Content #2'
-                        }
-                      ]}
-                    />
-                  </div>
+                  <InnerSectionHeading
+                    title="An Open Platform for our Participators"
+                    subTitle="Each participator can choose the trader and to sign a contract."
+                  />
+                  <SimpleList />
                 </div>
               </div>
             </div>
@@ -96,25 +57,20 @@ export default function Platform() {
                 <div className="col-lg-6 order-lg-last">
                   <div className="nk-block-img nk-block-ca">
                     <div className="nk-circle-animation nk-df-center fast" />
-                    {/* .circle-animation */}
                     <img
                       className="shadow rounded"
                       src="images/app-screens/sc-medium-a.png"
-                      alt=""
+                      alt="exchange"
                     />
                   </div>
                 </div>
                 <div className="col-lg-5">
-                  <div className="nk-block-text mgb-m30">
-                    <h2 className="title title-md">
-                      A Open Platform for our Participators
-                    </h2>
-                    <p>
-                      Each participator can choose the trader and to sign a
-                      contract.
-                    </p>
-                    <SimpleList />
-                  </div>
+                  <InnerSectionHeading
+                    title="A Open Platform for our Traders"
+                    subTitle="Each participator can choose the trader and to sign a
+                      contract."
+                  />
+                  <SimpleList />
                 </div>
               </div>
             </div>

@@ -15,7 +15,13 @@ import InvestmentsLogo from './components/Logos/InvestmentsLogo';
 
 // data
 import { NAV_BAR_LINKS } from './data/NavLinks';
-import { NAME, YEAR, NUMBER, ABOUT, CONTACT_DETAILS } from './data/CompanyInfo';
+import {
+  NAME,
+  YEAR,
+  ABOUT,
+  COMPANY_REGISTRATION,
+  CONTACT_DETAILS
+} from './data/CompanyInfo';
 
 export default function App() {
   return (
@@ -36,6 +42,7 @@ export default function App() {
           logo={<InvestmentsLogo />}
           aboutCompanyText={ABOUT}
           contactDetails={CONTACT_DETAILS}
+          registration={COMPANY_REGISTRATION}
         />
       </div>
     </div>
