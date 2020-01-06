@@ -61,7 +61,7 @@ export default function Footer({
   ));
 
   return (
-    <Container id={id} className={`${classes}`}>
+    <Container id={id} className={`tc-light ${classes}`}>
       <Row gutter={[0, 24]}>
         <Col md={10} sm={24}>
           <ColHeading>{companyName}</ColHeading>
@@ -69,8 +69,8 @@ export default function Footer({
           <ListContainer>{REGISTRATION_MARKUP}</ListContainer>
           <LogoContainer>{logo}</LogoContainer>
         </Col>
-        <Col md={6} sm={24}>
-          <>{CONTACT_LIST_MARKUP}</>
+        <Col md={6} sm={12}>
+          {CONTACT_LIST_MARKUP}
         </Col>
         <Col md={8} sm={24}>
           <ColHeading>About the company</ColHeading>

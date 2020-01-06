@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import media from 'styled-media-query';
 import { List, Icon } from 'antd';
 
 export default function SimpleList({
@@ -58,7 +59,7 @@ const Container = styled.div`
   }
 
   .ant-list-item-meta-content {
-    margin-left: 40px !important;
+    margin-left: 40px;
   }
 
   .ant-list-item-meta-description {
@@ -66,4 +67,10 @@ const Container = styled.div`
     font-size: 16px;
     color: #97afd5;
   }
+
+  ${media.lessThan('large')`
+    .ant-list-item-meta-content {
+      margin-left: 5px;
+    }
+`}
 `;

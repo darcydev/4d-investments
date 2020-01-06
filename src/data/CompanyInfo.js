@@ -20,15 +20,15 @@ export const COMPANY_REGISTRATION = [
 
 export const CONTACT_DETAILS = [
   {
-    icon: <Icon type="phone" theme="twoTone" />,
+    icon: <em className="contact-icon fas fa-phone" />,
     content: '+123 456 789'
   },
   {
-    icon: <Icon type="mail" theme="twoTone" />,
+    icon: <em className="contact-icon fas fa-envelope" />,
     content: 'info@4dinvestments.org'
   },
   {
-    icon: <Icon type="compass" theme="twoTone" />,
+    icon: <em className="contact-icon fas fa-compass" />,
     content: '8 Pue De La Perle, Seychelles'
   }
 ];
