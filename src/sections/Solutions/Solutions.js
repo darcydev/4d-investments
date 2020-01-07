@@ -11,7 +11,10 @@ export default function Solutions() {
       <div className="container">
         <div className="row justify-content-center text-center">
           <div className="col-lg-6">
-            <SectionHeading heading="Our Solutions" />
+            <SectionHeading
+              heading="Exchange Platform"
+              backgroundHeading="Exchange"
+            />
           </div>
         </div>
       </div>
@@ -50,4 +53,6 @@ export default function Solutions() {
   );
 }
 
-const ButtonContainer = styled.div``;
+const ButtonContainer = styled.div`
+  margin-top: 20px;
+`;

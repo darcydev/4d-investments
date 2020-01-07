@@ -5,29 +5,30 @@ import RoadmapItem from './RoadmapItem';
 
 const data = [
   {
-    date: 'Q1 2020',
-    title: 'Default title',
-    desc: 'Default description to be entered right here'
+    date: 'March 2018',
+    title: '4D Investments Ltd',
+    desc: 'Company founded'
   },
   {
-    date: 'Q2 2020',
-    title: 'Default title',
-    desc: 'Default description to be entered right here'
+    date: 'October 2019',
+    title: '4D Markets',
+    desc: 'Launched Finland office'
   },
   {
-    date: 'Q3 2020',
-    title: 'Default title',
-    desc: 'Default description to be entered right here'
+    date: 'November 2019',
+    title: '4D Markets',
+    desc:
+      'Our own marketplace: top assets always, safe and a fair Crypto Exchange.'
   },
   {
-    date: 'Q4 2020',
-    title: 'Default title',
-    desc: 'Default description to be entered right here'
+    date: 'October 2019',
+    title: 'DINT Token',
+    desc: 'Launched our token.'
   },
   {
-    date: 'Q5 2020',
-    title: 'Default title',
-    desc: 'Default description to be entered right here'
+    date: 'November 2019',
+    title: '4D Platform',
+    desc: 'Developed our own use case.'
   }
 ];
 
