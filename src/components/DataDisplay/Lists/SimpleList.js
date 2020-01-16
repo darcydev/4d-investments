@@ -7,6 +7,7 @@ export default function SimpleList({
   itemLayout = 'horizontal',
   styles = undefined,
   classes = undefined,
+  light = false,
   // default content
   data = [
     {
@@ -45,6 +46,7 @@ export default function SimpleList({
               className="feature-text"
               title={item.title}
               description={item.content}
+              style={{ color: light ? 'wheat' : '#0b0b1d' }}
             />
           </List.Item>
         )}
@@ -65,7 +67,7 @@ const Container = styled.div`
   .ant-list-item-meta-description {
     letter-spacing: 0.15px;
     font-size: 16px;
-    color: #97afd5;
+    color: inherit;
   }
 
   ${media.lessThan('large')`

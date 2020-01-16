@@ -16,7 +16,7 @@ import Press from '../../sections/Press/Press';
 
 export default function Home() {
   return (
-    <main className="nk-pages tc-light">
+    <main className="nk-pages">
       <Header />
       <EcoSystem />
       <Consultancy />

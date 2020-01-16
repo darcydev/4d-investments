@@ -9,6 +9,7 @@ export default function Header() {
     <header
       className="nk-header page-header is-transparent is-sticky is-dark"
       id="header"
+      style={{ backgroundColor: '#000010' }}
     >
       <NavBar />
       <div className="banner banner-fs tc-light">

@@ -54,14 +54,18 @@ const Container = styled.div`
   width: 90%;
   font-family: 'Quicksand';
 
+  .ant-tabs-bar {
+    border-bottom: 1px solid black;
+  }
+
   .ant-tabs-nav {
     font-size: 1.15rem;
     font-weight: 700;
-    color: white;
+    color: black;
   }
 
   .ant-collapse-item-active .ant-collapse-header {
-    color: white !important;
+    color: black !important;
   }
 
   .ant-collapse-header {

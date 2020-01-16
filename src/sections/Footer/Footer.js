@@ -52,7 +52,6 @@ export default function Footer({
     <SimpleButton type="link" text={v.title} href={v.link} />
   ));
 
-  const CONTACT_LIST_MARKUP = <SimpleList data={contactDetails} />;
   const REGISTRATION_MARKUP = registration.map((v, i) => (
     <li
       key={`${i}: ${v.number}`}
@@ -61,7 +60,7 @@ export default function Footer({
   ));
 
   return (
-    <Container id={id} className={`tc-light ${classes}`}>
+    <Container id={id} className={classes}>
       <Row gutter={[0, 24]}>
         <Col md={10} sm={24}>
           <ColHeading>{companyName}</ColHeading>
@@ -70,7 +69,7 @@ export default function Footer({
           <LogoContainer>{logo}</LogoContainer>
         </Col>
         <Col md={6} sm={12}>
-          {CONTACT_LIST_MARKUP}
+          <SimpleList light={true} data={contactDetails} />
         </Col>
         <Col md={8} sm={24}>
           <ColHeading>About the company</ColHeading>
@@ -87,6 +86,8 @@ export default function Footer({
 const Container = styled.footer`
   text-align: center;
   color: white;
+  background-color: #000010;
+  padding-top: 30px;
 
   h6 {
     color: white;

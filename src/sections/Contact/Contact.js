@@ -1,4 +1,5 @@
 import React from 'react';
+import styled from 'styled-components';
 import { Form, Row, Col, Icon } from 'antd';
 import { FaDiscord } from 'react-icons/fa';
 
@@ -6,16 +7,14 @@ import SectionHeading from '../../components/DataDisplay/Headings/SectionHeading
 import ContactForm from '../../components/DataEntry/Forms/ContactForm';
 import SimpleList from '../../components/DataDisplay/Lists/SimpleList';
 
-import { CONTACT_DETAILS } from '../../data/CompanyInfo';
-
 export default function Contact() {
   const WrappedContactForm = Form.create({ name: 'horizontal_contact' })(
     ContactForm
   );
 
   return (
-    <section className="section" id="contact">
-      <div className="container">
+    <Section className="section" id="contact">
+      <Container className="container">
         <SectionHeading
           heading="Contact us"
           subHeading="We are always open and we welcome and questions you have for
@@ -49,7 +48,11 @@ export default function Contact() {
             </div>
           </Col>
         </Row>
-      </div>
-    </section>
+      </Container>
+    </Section>
   );
 }
+
+const Section = styled.section``;
+
+const Container = styled.div``;
