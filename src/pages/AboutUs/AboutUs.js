@@ -7,20 +7,35 @@ import InnerSectionHeading from '../../components/DataDisplay/Headings/InnerSect
 import SimpleButton from '../../components/UI/Buttons/SimpleButton';
 import NavBar from '../../components/Navigation/NavBar';
 
+import Header from '../../sections/Header/Header';
+
 export default function AboutUs() {
   return (
     <main className="nk-pages tc-light">
-      <header>
-        <NavBar />
-      </header>
+      <Header hero={false} />
       <section>
-        <Content>
+        <Content className="container">
           <SectionHeading heading="About Us" />
-          <InnerSectionHeading
-            styles={{ textAlign: 'center' }}
-            title="The 4DInvestments Story"
-            subTitle="And that no State, without its Consent, shall be deprived of it's equal Suffrage in the Service of the United States, or of any particular State. And they shall make a List of all other Persons. They shall in all Cases whatsoever, over such District not exceeding ten Miles square as may, by Cession of particular States, and to exercise like Authority over all Places purchased by the Eleventh Amendment. They shall in all Cases, except Treason, Felony and Breach of the State from which he fled, be delivered up, to be removed to the State from which he fled, be delivered up on Claim of the Party convicted shall nevertheless be liable and subject to Indictment, Trial, Judgment and Punishment, according to Law. No Money shall be a Member or Members from two thirds of both Houses shall deem it necessary, shall propose Amendments to this Constitution, shall be a Representative who shall not have attained to the Age of twenty-five Years, and been nine Years a Resident within the United States, in Order to form a more perfect Union, establish Justice, insure domestic Tranquility, provide for organizing, arming, and disciplining the Militia, and for any Speech or Debate in either Case, shall be valid to all Intents and Purposes, as Part of them as may be necessary except on a question of Adjournment shall be presented to the Revision and Control of the Congress."
-          />
+          <p>
+            Main purpose of establishing this company was to deliver our own
+            vision with the needed services form Crypto Currency and Blockchain
+            industry to everyone’s use, who’s our use case solution considers.
+            We are surrounded by knowledge, experience, support, contacts and
+            passionate of the revolutionary Block Chain and Crypto Currency
+            industry.
+            <br />
+            <br />
+            With us you can be sure we provide you up to date information. We
+            continuously look for upgrades, news, price charts and much more. We
+            put all our effort to finish our already started use case, after
+            that, it’s when we start look for professionals to full fill the
+            team. We have covered up some big names in crypto space including
+            developers, traders who’s seriously interested about the crypto
+            industry we also use talented freelancers.
+            <br />
+            <br />
+            We do not do any investment management either OTC deals.
+          </p>
           <LinkContainer>
             <Link to="/">
               <SimpleButton type="danger" text="Back to Home" />
@@ -32,7 +47,7 @@ export default function AboutUs() {
   );
 }
 
-const Content = styled.div`
+const Content = styled.section`
   justify-content: center;
   padding-top: 60px;
 `;

@@ -12,22 +12,12 @@ export default function SimpleList({
   data = [
     {
       title: 'Default list title',
-      icon: (
-        <Icon
-          type="check-circle"
-          style={{ fontSize: '36px', color: '#f42f54' }}
-        />
-      ),
+      icon: <Icon type="check-circle" />,
       content: 'Default list content 1'
     },
     {
       title: 'Default list title',
-      icon: (
-        <Icon
-          type="check-circle"
-          style={{ fontSize: '36px', color: '#f42f54' }}
-        />
-      ),
+      icon: <Icon type="check-circle" />,
       content: 'Default list content 2'
     }
   ]
@@ -58,6 +48,11 @@ export default function SimpleList({
 const Container = styled.div`
   .ant-list-split .ant-list-item {
     border-bottom: none;
+
+    i {
+      font-size: 36px;
+      color: rgb(244, 47, 84);
+    }
   }
 
   .ant-list-item-meta-content {

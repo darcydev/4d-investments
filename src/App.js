@@ -5,6 +5,7 @@ import 'antd/dist/antd.css';
 
 import Home from './pages/Home/Home';
 import AboutUs from './pages/AboutUs/AboutUs';
+import Services from './pages/Services';
 import ContactUs from './pages/ContactUs/ContactUs';
 import Error from './pages/Error/Error';
 
@@ -31,6 +32,7 @@ export default function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/about" component={AboutUs} />
+          <Route exact path="/services" component={Services} />
           {/* <Route exact path="/work" component={Work} /> */}
           <Route exact path="/contact" component={ContactUs} />
           <Route component={Error} />

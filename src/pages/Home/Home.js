@@ -8,11 +8,9 @@ import Solutions from '../../sections/Solutions/Solutions';
 import TokenSale from '../../sections/TokenSale/TokenSale';
 import Roadmap from '../../sections/Roadmap/Roadmap';
 import Team from '../../sections/Team/Team';
-import Documents from '../../sections/Documents/Documents';
 import Contact from '../../sections/Contact/Contact';
 import Header from '../../sections/Header/Header';
 import FAQs from '../../sections/FAQs/FAQs';
-import Press from '../../sections/Press/Press';
 
 export default function Home() {
   return (
@@ -25,8 +23,6 @@ export default function Home() {
       <TokenSale />
       <Roadmap />
       <Team />
-      <Documents />
-      {/* <Press /> */}
       <FAQs />
       <Contact />
     </main>

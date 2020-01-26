@@ -21,4 +21,9 @@ export default function SectionHeading({
 
 const Container = styled.div`
   text-align: center;
+
+  h2,
+  p {
+    color: #202b47;
+  }
 `;
