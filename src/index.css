@@ -1,8 +1,27 @@
+:root {
+  /* COLORS */
+  --bg-main: white;
+  --bg-off: #cfcfcf;
+  --bg-dark: #000010;
+
+  --ui-main: blue;
+  --ui-danger: red;
+
+  --txt-main: white;
+  --txt-off: grey;
+  --txt-head: black;
+  --txt-subHead: black;
+
+  /* FONTS */
+  --font-head: 'Roboto';
+  --font-txt: 'Segoe UI';
+}
+
 body {
   margin: 0;
-  font-family: 'Quicksand', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
-    'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -27,6 +46,20 @@ section {
 
 footer {
   max-width: 1460px;
+}
+
+/* TYPOGRAPHY */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-head);
+}
+
+p {
+  font-family: var(--font-txt);
 }
 
 .flex-container-sm,

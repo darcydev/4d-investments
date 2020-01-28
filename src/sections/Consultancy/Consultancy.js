@@ -6,6 +6,8 @@ import SectionHeading from '../../components/DataDisplay/Headings/SectionHeading
 import SimpleList from '../../components/DataDisplay/Lists/SimpleList';
 
 export default function Consultancy() {
+  const ICON_MARKUP = <Icon type="check-circle" />;
+
   return (
     <section>
       <div className="container">
@@ -21,14 +23,20 @@ export default function Consultancy() {
           <SimpleList
             data={[
               {
-                icon: <Icon type="check-circle" />,
-                title: 'Company',
-                content: 'Default company content'
+                icon: ICON_MARKUP,
+                content: 'Company'
               },
               {
-                icon: <Icon type="check-circle" />,
-                title: 'Legal',
-                content: 'Default legal content'
+                icon: ICON_MARKUP,
+                content: 'Legal'
+              },
+              {
+                icon: ICON_MARKUP,
+                content: 'Regulations'
+              },
+              {
+                icon: ICON_MARKUP,
+                content: 'Include Number 4'
               }
             ]}
           />

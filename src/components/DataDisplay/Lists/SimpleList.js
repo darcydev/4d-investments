@@ -11,12 +11,10 @@ export default function SimpleList({
   // default content
   data = [
     {
-      title: 'Default list title',
       icon: <Icon type="check-circle" />,
       content: 'Default list content 1'
     },
     {
-      title: 'Default list title',
       icon: <Icon type="check-circle" />,
       content: 'Default list content 2'
     }
@@ -67,7 +65,13 @@ const Container = styled.div`
 
   ${media.lessThan('large')`
     .ant-list-item-meta-content {
-      margin-left: 5px;
+      margin-left: 20px;
     }
-`}
+  `}
+
+  ${media.lessThan('medium')`
+    .ant-list-item-meta-content {
+      margin-left: 10px;
+    }
+  `}
 `;

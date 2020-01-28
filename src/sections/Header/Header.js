@@ -1,25 +1,31 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Typography, Row, Col } from 'antd';
 
 import NavBar from '../../components/Navigation/NavBar';
 import SimpleButton from '../../components/UI/Buttons/SimpleButton';
+
+const { Title } = Typography;
 
 export default function Header({ hero = true }) {
   const HERO_MARKUP = hero ? HERO_CONTENT : null;
 
   return (
-    <header
+    <HeaderContainer
       className="nk-header page-header is-transparent is-sticky is-dark"
       id="header"
-      style={{ backgroundColor: '#000010' }}
     >
       <NavBar />
       {HERO_MARKUP}
-    </header>
+    </HeaderContainer>
   );
 }
 
 // STYLES
+
+const HeaderContainer = styled.header`
+  background: var(--bg-dark);
+`;
 
 const ButtonContainer = styled.div`
   color: white;
@@ -30,8 +36,12 @@ const ButtonContainer = styled.div`
   height: 100%;
 `;
 
-const HeroTitle = styled.h1`
-  font-size: 55px;
+const Heading = styled(Title)`
+  color: var(--txt-white) !important;
+`;
+
+const SubHeading = styled(Title)`
+  color: var(--txt-white) !important;
 `;
 
 // CONTENT
@@ -47,16 +57,14 @@ const HERO_CONTENT = (
           </div>
           <div className="col-xl-5 col-lg-6 col-sm-10 text-center text-lg-left">
             <div className="banner-caption">
-              <HeroTitle>
-                4D Investments <br />
-                FINLAND OY
-              </HeroTitle>
-              <h4 className="lead">
+              <Heading level={1}>4D Investments FINLAND OY</Heading>
+              <SubHeading level={4}>
                 By investing years of time into our unique aim, we are able to
                 think outside the box in blockchain.
                 <br />
+                <br />
                 Hello Tomorrow, For Businesses A Transparency.
-              </h4>
+              </SubHeading>
               <ButtonContainer>
                 <SimpleButton
                   type="danger"
