@@ -1,91 +1,130 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import media from 'styled-media-query';
-import { Row, Col, Icon } from 'antd';
+import { Row, Col, Icon, Modal, Button, Typography } from 'antd';
 
 import SectionHeading from '../../components/DataDisplay/Headings/SectionHeading';
 import SimpleButton from '../../components/UI/Buttons/SimpleButton';
 import SimpleList from '../../components/DataDisplay/Lists/SimpleList';
 
+import ButtonRow from '../ButtonRow';
+
+const { Text } = Typography;
+
 export default function Solutions() {
+  const [pairsModalOpen, togglePairsModal] = useState(false);
+  const [termsModalOpen, toggleTermsModal] = useState(false);
+  const [reflinkModalOpen, toggleReflinkModal] = useState(false);
+
+  const handlePairsModal = () => togglePairsModal(!pairsModalOpen);
+  const handleTermsModal = () => toggleTermsModal(!termsModalOpen);
+  const handleReflinkModal = () => toggleReflinkModal(!reflinkModalOpen);
+
+  const TRADING_PAIRS_MODAL = (
+    <Modal
+      title="Trading Pairs"
+      visible={pairsModalOpen}
+      onOk={handlePairsModal}
+      onCancel={handlePairsModal}
+    >
+      <Text>COPY FROM 4DMARKETS.COM</Text>
+    </Modal>
+  );
+
+  const TERMS_MODAL = (
+    <Modal
+      title="Terms and Conditions"
+      visible={termsModalOpen}
+      onOk={handleTermsModal}
+      onCancel={handleTermsModal}
+    >
+      <Text>COPY FROM 4DMARKETS.COM</Text>
+    </Modal>
+  );
+
+  const REFLINK_MODAL = (
+    <Modal
+      title="Reflink"
+      visible={reflinkModalOpen}
+      onOk={handleReflinkModal}
+      onCancel={handleReflinkModal}
+    >
+      <Text>
+        Using this referral link, you agree that the Discord community choses,
+        where to use the collected referral trading fees, it’s our community’s
+        benefit.
+      </Text>
+    </Modal>
+  );
+
   return (
-    <section className="section" id="mvp">
+    <section className="section">
       <div className="container">
-        <div className="row justify-content-center text-center">
-          <div className="col-lg-6">
-            <SectionHeading
-              heading="4DMarkets"
-              subHeading="Offering Top and Useful Assets, Only & Always with Low Fees"
+        <SectionHeading
+          heading="4DMarkets"
+          subHeading="Offering Top and Useful Assets, Only & Always with Low Fees"
+        />
+        <Row>
+          <Col span={12}>
+            <img
+              className="shadow rounded"
+              src="images/app-screens/sc-medium-b.png"
+              alt="sc-medium"
             />
-          </div>
-        </div>
-      </div>
-      <div className="container container-xxl">
-        <div className="nk-block">
-          <div className="row align-items-center justify-content-center justify-content-xl-between gutter-vr-30px">
-            <Row>
-              <Col span={12}>
-                <img
-                  className="shadow rounded"
-                  src="images/app-screens/sc-medium-b.png"
-                  alt="sc-medium"
-                />
-                <img
-                  className="nk-block-img-plx plx-circle plx-circle-s1"
-                  src="images/gfx/circle-a.png"
-                  alt="circle"
-                />
-              </Col>
-              <Col span={12}>
-                <SimpleList data={LIST_CONTENT} />
-              </Col>
-            </Row>
-            <Row gutter={[16, 16]}>
-              <Col span={12}>
-                <SimpleButton text="Reflink" />
-              </Col>
-              <Col span={12}>
-                <SimpleButton text="T&Cs" />
-              </Col>
-            </Row>
-            <Row gutter={[16, 16]}>
-              <Col span={12}>
-                <SimpleButton text="Trading Pairs" />
-              </Col>
-              <Col span={12}>
+            <img
+              className="nk-block-img-plx plx-circle plx-circle-s1"
+              src="images/gfx/circle-a.png"
+              alt="circle"
+            />
+          </Col>
+          <Col span={12}>
+            <SimpleList data={LIST_CONTENT} />
+          </Col>
+        </Row>
+        <Row>
+          <Col span={24}>
+            <ButtonRow
+              content={[
+                <SimpleButton
+                  text="Trading Pairs"
+                  type="danger"
+                  customStyleType="big"
+                  onClick={handlePairsModal}
+                />,
+                <SimpleButton
+                  text="Terms and Conditions"
+                  type="danger"
+                  customStyleType="big"
+                  onClick={handleTermsModal}
+                />,
                 <SimpleButton
                   text="Exchange"
+                  type="danger"
+                  customStyleType="big"
                   href="https://trade.4dmarkets.com"
+                />,
+                <SimpleButton
+                  text="Refink"
+                  type="danger"
+                  customStyleType="big"
+                  onClick={handleReflinkModal}
                 />
-              </Col>
-            </Row>
-          </div>
-        </div>
+              ]}
+            />
+          </Col>
+          {TRADING_PAIRS_MODAL}
+          {TERMS_MODAL}
+          {REFLINK_MODAL}
+        </Row>
       </div>
     </section>
   );
 }
 
 // STYLES
-const ButtonRow = styled.div`
-  display: flex;
-  justify-content: space-between;
-
-  ${media.lessThan('small')`
-    flex-direction: column;
-    margin: auto;
-    max-width: 75%;
-  `}
-`;
-
-const ButtonContainer = styled.div``;
 
 // CONTENT
 const ICON_MARKUP = <Icon type="check-circle" />;
-
-const BUTTONS_CONTENT = [
-  { text: 'Enter Exchange', href: 'https://trade.4dmarkets.com' }
-];
 
 const LIST_CONTENT = [
   {

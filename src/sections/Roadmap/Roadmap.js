@@ -3,36 +3,7 @@ import React from 'react';
 import SectionHeading from '../../components/DataDisplay/Headings/SectionHeading';
 import RoadmapItem from './RoadmapItem';
 
-const data = [
-  {
-    date: 'March 2018',
-    title: '4D Investments Ltd',
-    desc: 'Company founded'
-  },
-  {
-    date: 'October 2019',
-    title: '4D Markets',
-    desc: 'Launched Finland office'
-  },
-  {
-    date: 'November 2019',
-    title: '4D Markets',
-    desc:
-      'Our own marketplace: top assets always, safe and a fair Crypto Exchange.'
-  },
-  {
-    date: 'October 2019',
-    title: 'DINT Token',
-    desc: 'Launched our token.'
-  },
-  {
-    date: 'November 2019',
-    title: '4D Platform',
-    desc: 'Developed our own use case.'
-  }
-];
-
-export default function() {
+export default function Roadmap() {
   const ITEMS_MARKUP = data.map((v, i) => (
     <RoadmapItem
       key={`${i}: ${v.desc}`}
@@ -74,3 +45,37 @@ export default function() {
     </section>
   );
 }
+
+// CONTENT
+const data = [
+  {
+    date: 'March 2018',
+    title: '4D Investments Ltd Seychelles',
+    desc: 'Company founded'
+  },
+  {
+    date: 'August 2018',
+    title: '4D Markets',
+    desc: 'Our Marketplace'
+  },
+  {
+    date: 'November 2019',
+    title: 'insert',
+    desc: 'insert content'
+  },
+  {
+    date: 'December 2019',
+    title: 'insert',
+    desc: 'insert content'
+  },
+  {
+    date: 'January 2020',
+    title: 'insert',
+    desc: 'insert content'
+  },
+  {
+    date: 'February 2020',
+    title: 'insert',
+    desc: 'insert content'
+  }
+];

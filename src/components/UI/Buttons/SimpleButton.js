@@ -15,7 +15,8 @@ export default function SimpleButton({
   styles = undefined,
   classes = undefined,
   customStyleType = undefined,
-  disabled = false
+  disabled = false,
+  onClick = () => console.log('button clicked')
 }) {
   if (customStyleType === 'big') styles = customBigButtonStyle;
 
@@ -32,6 +33,7 @@ export default function SimpleButton({
       style={styles}
       className={classes}
       disabled={disabled}
+      onClick={onClick}
     >
       {customTextIcon}
       {text}

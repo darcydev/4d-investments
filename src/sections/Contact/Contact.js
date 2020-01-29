@@ -17,10 +17,7 @@ export default function Contact() {
       <Container className="container">
         <SectionHeading
           heading="Contact us"
-          subHeading="We are always open and we welcome and questions you have for
-                    our team. If you wish to get in touch, please fill out the
-                    form below. Someone from our team will get back to you
-                    shortly."
+          subHeading="You can get in touch with us for multiple purposes. We can cover up completely everything that: If it's suitable for you, it's for you."
         />
         <Row className="flex-container-lg">
           <Col lg={10} md={24}>
@@ -39,12 +36,19 @@ export default function Contact() {
                     content: 'info@4dinvestments.org'
                   },
                   {
-                    icon: <em className="contact-icon fab fa-discord" />,
+                    icon: (
+                      <a href="https://discord.gg/VTkyGx3" target="_blank">
+                        {DISCORD}
+                      </a>
+                    ),
                     content: 'Join us on Discord'
                   }
                 ]}
               />
-              <div className="nk-circle-animation nk-df-center white small" />
+              <div
+                className="nk-circle-animation nk-df-center white small"
+                style={{ zIndex: -1 }}
+              />
             </div>
           </Col>
         </Row>
@@ -56,3 +60,6 @@ export default function Contact() {
 const Section = styled.section``;
 
 const Container = styled.div``;
+
+// CONTENT
+const DISCORD = <em className="contact-icon fab fa-discord" />;

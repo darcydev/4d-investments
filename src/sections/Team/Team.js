@@ -1,7 +1,7 @@
 import React from 'react';
 
 import SectionHeading from '../../components/DataDisplay/Headings/SectionHeading';
-import Partners from '../Partners/Partners';
+import ImageCarousel from '../../components/DataDisplay/Carousel/ImageCarousel';
 
 import TeamItem from './TeamItem';
 
@@ -32,8 +32,34 @@ export default function Team() {
             <TeamItem />
           </div>
         </div>
-        <Partners />
+        <div className="nk-block block-partners">
+          <ImageCarousel title="Our Partners" data={PARTNER_DATA} />
+        </div>
+        <div className="nk-block block-partners">
+          <ImageCarousel title="Great Crypto Projects" data={PROJECT_DATA} />
+        </div>
       </div>
     </section>
   );
 }
+
+// CONTENT
+const PARTNER_DATA = [
+  'images/partners/a-light.png',
+  'images/partners/b-light.png',
+  'images/partners/c-light.png',
+  'images/partners/d-light.png',
+  'images/partners/e-light.png',
+  'images/partners/f-light.png',
+  'images/partners/g-light.png'
+];
+
+const PROJECT_DATA = [
+  'images/partners/a-light.png',
+  'images/partners/b-light.png',
+  'images/partners/c-light.png',
+  'images/partners/d-light.png',
+  'images/partners/e-light.png',
+  'images/partners/f-light.png',
+  'images/partners/g-light.png'
+];
